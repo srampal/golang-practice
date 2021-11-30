@@ -3,7 +3,7 @@ package ex1
 
 import "fmt"
 
-// Exercise runs this exercise
+// Exercise use of very basic structs, enums, slices
 func Exercise() {
 	fmt.Printf("\nRunning Exercise 1\n\n")
 
