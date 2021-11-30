@@ -2,7 +2,8 @@ package ex2
 
 import (
 	"errors"
-	"log"
+
+	"github.com/sirupsen/logrus"
 )
 
 //Exercise Fibonacci calculator. Takes user input n, returns Fib(n)
@@ -11,7 +12,7 @@ func Exercise(n uint32) (fib uint32, err error) {
 	var i, fibMinus1, fibMinus2 uint32
 
 	if n > 100 {
-		log.Printf("Received invalid input %d\n", n)
+		logrus.Printf("Received invalid input %d\n", n)
 		err = errors.New("Invalid input!")
 	}
 
